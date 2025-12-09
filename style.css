@@ -1,0 +1,87 @@
+body {
+    font-family: Arial;
+    background: #f1f4f8;
+    padding: 20px;
+}
+#sub{
+    color: gray;
+}
+#a{
+    width: 80px;
+    margin-bottom: 5px;
+    
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    width: 280px;     
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    .cards-container {
+        flex-wrap: wrap;     
+        justify-content: center;
+    }
+}
+/* Table styling */
+.table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    text-align: left;
+}
+/*This targets all table header cells*/
+th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+}
+/*This targets every normal table cell*/
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+/*THIS GIVES STRIPED EFFECT TO THE TABLE*/
+tbody tr:nth-child(even) {
+    background: #f5f6f7;
+}
+/*THIS GIVES COLOUR CHANGING EFFECT WHEN CURSOR MOVES*/
+tbody tr:hover {
+    background: #e4e8ff;
+}
+
